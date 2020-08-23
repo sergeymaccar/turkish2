@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="root">
+        <div class="App">
+            <header class="App-header">
+                <img src="img/logo.svg" class="App-logo" alt="logo">
+            </header>
+
+            <div class="container">
+
+                <div class="filters">
+                    <h2>Валюта</h2>
+
+                    <ul id="lang" class="lang converter">
+                        <li class="btn active">USD</li>
+                        <li class="btn">RUB</li>
+                        <li class="btn">EUR</li>
+                    </ul>
+
+                    
+
+                    <h3>Количество пересадок</h3>
+
+                    <div id="myBtnContainer" class="filters-container">
+                        <div class="transplants-filter">
+                            <input type="checkbox"  id="all" class="all-main" checked>
+                            <label for="all">Все</label>
+                            
+                        </div>
+
+                            <div class="transplants-filter">
+                                <input type="checkbox" id="0" class="ckeckStops">
+                                <label for="0">Без пересадок</label>
+                            
+                            </div>
+                            <div class="transplants-filter">
+                                <input type="checkbox" id="1" class="ckeckStops">
+                                <label for="1">1 пересадка</label>
+                            
+                            </div>
+                            <div class="transplants-filter">
+                                <input type="checkbox" id="2" class="ckeckStops">
+                                <label for="2">2 пересадки</label>
+                            
+                            </div>
+                            <div class="transplants-filter">
+                                <input type="checkbox" id="3" class="ckeckStops">
+                                <label for="3">3 пересадки</label>
+                            
+                            </div>
+                        
+                    </div>
+                </div>
+
+                <div class="tickets" id="tickets">
+
+                    <div class="ticket none all">
+                        <div class="side-buy">
+                            <img src="img/title.svg" alt="title">
+                            <div class="btn-buy">
+                                <span class="price">Купить</span>
+                                <br>
+                                <span data-rub="1740 RUB" data-eur="60 EUR" data-usd="12 000 USD" class="price">12 000USD</span>
+                            </div>
+                        </div>
+                        <div class="transp-side">
+                            <div class="transp-from">
+                                <div class="time">
+                                    <h6>12:10</h6>
+                                </div>
+                                <div class="sity">
+                                    <p>VVO Владивосток</p>
+                                </div>
+                                <div class="date">
+                                    <span>5 дек, 2018, ср</span>
+                                </div>
+                            </div>
+                            <div class="amount-transp">
+                                <span>Без пересадок</span>
+                                <div class="underline">
+                                    <img class="plane" src="img/plane.svg" alt="plane">
+                                </div>
+                            </div>
+                            <div class="transp-to">
+                                <div class="time">
+                                    <h6>18:10</h6>
+                                </div>
+                                <div class="sity">
+                                    <p>TLV Тель-Авив</p>
+                                </div>
+                                <div class="date">
+                                    <span>5 дек, 2018, ср</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ticket none all">
+                        <div class="side-buy">
+                            <img src="img/title.svg" alt="title">
+                            <div class="btn-buy">
+                                <span class="price">Купить</span>
+                                <br>
+                                <span data-rub="1740 RUB" data-eur="60 EUR" data-usd="12 000 USD" class="price">12 000USD</span>
+                            </div>
+                        </div>
+                        <div class="transp-side">
+                            <div class="transp-from">
+                                <div class="time">
+                                    <h6>12:10</h6>
+                                </div>
+                                <div class="sity">
+                                    <p>VVO Владивосток</p>
+                                </div>
+                                <div class="date">
+                                    <span>5 дек, 2018, ср</span>
+                                </div>
+                            </div>
+                            <div class="amount-transp">
+                                <span>Без пересадки</span>
+                                <div class="underline">
+                                    <img class="plane" src="img/plane.svg" alt="plane">
+                                </div>
+                            </div>
+                            <div class="transp-to">
+                                <div class="time">
+                                    <h6>18:10</h6>
+                                </div>
+                                <div class="sity">
+                                    <p>TLV Тель-Авив</p>
+                                </div>
+                                <div class="date">
+                                    <span>5 дек, 2018, ср</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="ticket one all">
+                        <div class="side-buy">
+                            <img src="img/title.svg" alt="title">
+                            <div class="btn-buy">
+                                <span class="price">Купить</span>
+                                <br>
+                                <span data-rub="1740 RUB" data-eur="60 EUR" data-usd="12 000 USD" class="price">12 000USD</span>
+                            </div>
+                        </div>
+                        <div class="transp-side">
+                            <div class="transp-from">
+                                <div class="time">
+                                    <h6>12:10</h6>
+                                </div>
+                                <div class="sity">
+                                    <p>VVO Владивосток</p>
+                                </div>
+                                <div class="date">
+                                    <span>5 дек, 2018, ср</span>
+                                </div>
+                            </div>
+                            <div class="amount-transp">
+                                <span>1 пересадка</span>
+                                <div class="underline">
+                                    <img class="plane" src="img/plane.svg" alt="plane">
+                                </div>
+                            </div>
+                            <div class="transp-to">
+                                <div class="time">
+                                    <h6>18:10</h6>
+                                </div>
+                                <div class="sity">
+                                    <p>TLV Тель-Авив</p>
+                                </div>
+                                <div class="date">
+                                    <span>5 дек, 2018, ср</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ticket two all">
+                        <div class="side-buy">
+                            <img src="img/title.svg" alt="title">
+                            <div class="btn-buy">
+                                <span class="price">Купить</span>
+                                <br>
+                                <span data-rub="1740 RUB" data-eur="60 EUR" data-usd="12 000 USD" class="price">12 000USD</span>
+                            </div>
+                        </div>
+                        <div class="transp-side">
+                            <div class="transp-from">
+                                <div class="time">
+                                    <h6>12:10</h6>
+                                </div>
+                                <div class="sity">
+                                    <p>VVO Владивосток</p>
+                                </div>
+                                <div class="date">
+                                    <span>5 дек, 2018, ср</span>
+                                </div>
+                            </div>
+                            <div class="amount-transp">
+                                <span>2 пересадки</span>
+                                <div class="underline">
+                                    <img class="plane" src="img/plane.svg" alt="plane">
+                                </div>
+                            </div>
+                            <div class="transp-to">
+                                <div class="time">
+                                    <h6>18:10</h6>
+                                </div>
+                                <div class="sity">
+                                    <p>TLV Тель-Авив</p>
+                                </div>
+                                <div class="date">
+                                    <span>5 дек, 2018, ср</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ticket two all">
+                        <div class="side-buy">
+                            <img src="img/title.svg" alt="title">
+                            <div class="btn-buy">
+                                <span class="price">Купить</span>
+                                <br>
+                                <span data-rub="1740 RUB" data-eur="60 EUR" data-usd="12 000 USD" class="price">12 000USD</span>
+                            </div>
+                        </div>
+                        <div class="transp-side">
+                            <div class="transp-from">
+                                <div class="time">
+                                    <h6>12:10</h6>
+                                </div>
+                                <div class="sity">
+                                    <p>VVO Владивосток</p>
+                                </div>
+                                <div class="date">
+                                    <span>5 дек, 2018, ср</span>
+                                </div>
+                            </div>
+                            <div class="amount-transp">
+                                <span>2 пересадки</span>
+                                <div class="underline">
+                                    <img class="plane" src="img/plane.svg" alt="plane">
+                                </div>
+                            </div>
+                            <div class="transp-to">
+                                <div class="time">
+                                    <h6>18:10</h6>
+                                </div>
+                                <div class="sity">
+                                    <p>TLV Тель-Авив</p>
+                                </div>
+                                <div class="date">
+                                    <span>5 дек, 2018, ср</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="ticket three all">
+                        <div class="side-buy">
+                        <img src="img/title.svg" alt="title">
+                        <div class="btn-buy">
+                            <span class="price">Купить</span>
+                            <br>
+                            <span data-rub="1740 RUB" data-eur="60 EUR" data-usd="12 000 USD" class="price">12 000USD</span>
+                        </div>
+                    </div>
+                    <div class="transp-side">
+                        <div class="transp-from">
+                            <div class="time">
+                                <h6>12:10</h6>
+                            </div>
+                            <div class="sity">
+                                <p>VVO Владивосток</p>
+                            </div>
+                            <div class="date">
+                                <span>5 дек, 2018, ср</span>
+                            </div>
+                        </div>
+                        <div class="amount-transp">
+                            <span>3 пересадки</span>
+                            <div class="underline">
+                                <img class="plane" src="img/plane.svg" alt="plane">
+                            </div>
+                        </div>
+                        <div class="transp-to">
+                            <div class="time">
+                                <h6>18:10</h6>
+                            </div>
+                            <div class="sity">
+                                <p>TLV Тель-Авив</p>
+                            </div>
+                            <div class="date">
+                                <span>5 дек, 2018, ср</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            
+                <div class="ticket three all">
+                    <div class="side-buy">
+                        <img src="img/title.svg" alt="title">
+                        <div class="btn-buy">
+                            <span class="price">Купить</span>
+                            <br>
+                            <span data-rub="1740 RUB" data-eur="60 EUR" data-usd="12 000 USD" class="price">12 000USD</span>
+                        </div>
+                    </div>
+                    <div class="transp-side">
+                        <div class="transp-from">
+                            <div class="time">
+                                <h6>12:10</h6>
+                            </div>
+                            <div class="sity">
+                                <p>VVO Владивосток</p>
+                            </div>
+                            <div class="date">
+                                <span>5 дек, 2018, ср</span>
+                            </div>
+                        </div>
+                        <div class="amount-transp">
+                            <span>3 пересадки</span>
+                            <div class="underline">
+                                <img class="plane" src="img/plane.svg" alt="plane">
+                            </div>
+                        </div>
+                        <div class="transp-to">
+                            <div class="time">
+                                <h6>18:10</h6>
+                            </div>
+                            <div class="sity">
+                                <p>TLV Тель-Авив</p>
+                            </div>
+                            <div class="date">
+                                <span>5 дек, 2018, ср</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+    
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+
+        <script src="js/filter.js"></script>
+
+        
+        <!-- curency button active-->
+
+        <script>
+            $(document).ready(function () {
+                    $('.converter li').click(function () {
+                        $('.converter li').removeClass('active');
+                        $(this).addClass('active'); // Added
+                        var c = $(this).addClass('active').text().toLowerCase();
+
+                        // createCookie("carrency",c,30);
+
+                        $('[data-eur]').each(function () {
+                            $(this).html($(this).data(c))
+                        })
+
+                        // return !1; // commented
+                    });
+                })
+        </script>
+        
+
+</body>
+</html>
